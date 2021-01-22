@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS clientTest;
 DROP TABLE IF EXISTS articleTest;
-DROP TABLE IF EXISTS administrateur;
-DROP TABLE IF EXISTS commentaire;
+/*DROP TABLE IF EXISTS administrateur;
+DROP TABLE IF EXISTS commentaire;*/
 
 CREATE TABLE clientTest (
 	idClient SERIAL PRIMARY KEY,
@@ -14,13 +14,17 @@ CREATE TABLE clientTest (
 	codePostal2 int,
 	ville2 VARCHAR(50),
 	tel int,
-	email VARCHAR(50)
+	email VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE administrateur (
 	idAdmin SERIAL PRIMARY KEY,
-	nom VARCHAR(50)
+	nom VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	tel int
 );
+
+INSERT INTO administrateur VALUES (1, "Adrien Palerm", "adrien.palerm33@gmail.com", 33778565703), (2, "Axel Mancini", "a"), (3, "Nitharsan Kunalingam", "a");
 
 /*
 CREATE TABLE articleTest (
