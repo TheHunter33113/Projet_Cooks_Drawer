@@ -1,32 +1,41 @@
-create or replace table objet (
-	idObj int,
+DROP TABLE IF EXISTS objet;
+DROP TABLE IF EXISTS categorie;
+
+CREATE TABLE objet (
+	idObj serial PRIMARY KEY,
 	nomObj varchar (50),
 	description text,
 	prix FLOAT(2),
 	dispo boolean,
 	nomCat varchar (12),
 
-	constraint pk_objet PRIMARY KEY (idObj),
-	constraint fk_objet_categorie FOREIGN KEY (categorie), 
+	constraint fk_objet_categorie FOREIGN KEY (nomCat) REFERENCES categorie (nomCat)
 );
 
-create or replace table categorie (
-	idCat int,
+CREATE TABLE categorie (
+	idCat serial PRIMARY KEY,
 	nomCat varchar(12),
-	description text,
+	description text
 
-	constraint pk_categorie PRIMARY KEY (idCat),
+
 );
 
-create or replace table panier (
-	idPanier int,
+/*create or replace table panier (
+	idPanier serial PRIMARY KEY,
 	idObj int,
 	nomObj varchar (50),
 	prix FLOAT(2),
-	
-	constraint pk_pabier PRIMARY KEY (idPanier),
-	constraint fk_panier_objet FOREIGN KEY (idObj),
-	constraint fk_panier_objet FOREIGN KEY (nomObj),
-	constraint fk_panier_objet FOREIGN KEY (prix),
+
+	constraint fk_panier_objet FOREIGN KEY (idObj) REFERENCES objet (idObj),
+	constraint fk_panier_objet FOREIGN KEY (nomObj) REFERENCES objet (nomObj),
+	constraint fk_panier_objet FOREIGN KEY (prix) REFERENCES objet (prix),
 );
 
+create or replace table commande (
+	idCom int,
+	dateCom date,
+	prix FLOAT(2),
+	dateLivraison date,
+
+	constraint pk_panier PRIMARY KEY (idPanier)
+);*/s
