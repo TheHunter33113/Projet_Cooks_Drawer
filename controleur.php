@@ -11,7 +11,7 @@ class controleur extends model {
           if (!isset($_GET['objet']))  
           {  
                // no special book is requested, we'll show a list of all available books  
-               $books = $this->model->getobjetlist();  
+               $objet = $this->model->getobjetlist();  
                include 'view/objetlist.php'; 
           } 
           else 
