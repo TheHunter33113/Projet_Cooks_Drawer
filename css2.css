@@ -1,0 +1,41 @@
+.photo-column {
+  box-sizing: border-box;
+}
+
+.photo-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.photo-column {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding-right:8px;
+}
+
+.photo-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+screen and (max-width: 575px) {
+  .photo-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    
+    padding:0 25% ;
+  }
+}
+
+ screen and (max-width: 480px) {
+  .photo-column {
+    padding:0;
+  }
+}
