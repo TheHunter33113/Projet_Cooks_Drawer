@@ -1,0 +1,11 @@
+
+conteneur {
+    display: flex;
+    justify-content: center;
+  }
+
+img {
+    margin-top: 70px;
+    border-radius: 50%;
+  }
+  
