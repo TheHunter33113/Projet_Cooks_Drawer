@@ -1,18 +1,19 @@
-create or replace table objet (
-	idObj int,
-	nom varchar (50),
+DROP TABLE IF EXISTS objet;
+DROP TABLE IF EXISTS categorie;
+
+CREATE TABLE objet (
+	idObj serial PRIMARY KEY,
+	nomObj varchar (50),
 	description text,
 	prix FLOAT(2),
-	dispo boolean,
-	categorie varchar (12),
+	artisan varchar (25),
+	dispo int,
+	nomCat varchar (12),
 
-	constraint pk_objet PRIMARY KEY (idObj),
-)
+	constraint fk_objet_categorie FOREIGN KEY (nomCat) REFERENCES categorie (nomCat)
+);
 
-create or replace table categorie (
-	idCat int,
-	nom varchar(12),
-	description text,
-
-	constraint pk_categorie PRIMARY KEY (idCat),
-)
+CREATE TABLE categorie (
+	idCat serial PRIMARY KEY,
+	nomCat varchar(12),
+);
