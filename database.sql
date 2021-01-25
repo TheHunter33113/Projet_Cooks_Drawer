@@ -15,5 +15,5 @@ CREATE TABLE objet (
 
 CREATE TABLE categorie (
 	idCat serial PRIMARY KEY,
-	nomCat varchar(12),
+	nomCat varchar(12)
 );
