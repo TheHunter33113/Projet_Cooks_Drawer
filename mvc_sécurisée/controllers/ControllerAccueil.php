@@ -7,7 +7,7 @@ class ControllerAccueil
 
     public function __construct($url)
     {
-        if(isset($url) && count($url) > 1 )
+        if(isset($url) && count(array($url)) > 1 )
           throw new Exception('Page introuvable');
         else
           $this->objet();
@@ -23,4 +23,5 @@ class ControllerAccueil
         $this->_view->generate(array('objet' => $objet));
     }
 }
+
 
