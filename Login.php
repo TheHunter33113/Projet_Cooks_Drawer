@@ -19,16 +19,16 @@
 				<li><a href="Produits.html">Produits</a>
 				<!-- First Tier Drop Down -->
 				<ul>
-					<li><a href="#">COUTEAUX</a></li>
-					<li><a href="#">Ustensile</a></li>
-					<li><a href="#">Equipement</a></li>
+					<li><a href="couteaux.html">COUTEAUX</a></li>
+					<li><a href="ustensile.html">Ustensile</a></li>
+					<li><a href="equipement.html">Equipement</a></li>
 				</ul>        
 				</li>
 				<li><a href="Contact.html">Contact</a>
 				<!-- First Tier Drop Down -->
 				<ul>
-					<li><a href="#">Avis</a></li>
-					<li><a href="#">Nous Contacter</a></li>
+					<li><a href="avis.html">Avis</a></li>
+					<li><a href="Contact.html">Nous Contacter</a></li>
 								
                 </ul>
 				</li> 		
@@ -36,7 +36,7 @@
 				<li><a href="Panier.html">Panier</a>
 					<!-- First Tier Drop Down -->
 					<ul>
-						<li><a href="#">Commander</a></li>
+						<li><a href="commande.html">Commander</a></li>
 						<li><a href="#">Voir le Panier</a></li>
 						
 					</ul>        
