@@ -17,3 +17,4 @@ CREATE TABLE categorie (
 	idCat serial PRIMARY KEY,
 	nomCat varchar(12)
 );
+INSERT INTO `objet` (`idObj`, `nomObj`, `description`, `prix`, `artisan`, `dispo`, `nomCat`) VALUES ('1', 'Kiritsuke', NULL, '1', 'Satsuki', '1', 'Couteau');
