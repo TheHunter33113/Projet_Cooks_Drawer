@@ -6,7 +6,7 @@
 	</head>
 	<header>
 		<h1><a href="<?= URL?>">Cook's Drawer</a></h1>
-		<?= nomObj ?>
+		<?= $nomObj ?>
 	</header>
     <footer></footer>
 </html>
