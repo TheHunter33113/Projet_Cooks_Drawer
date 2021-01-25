@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf_8">
 	<title>Login form</title>
-	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
 </head><body>
 
 
